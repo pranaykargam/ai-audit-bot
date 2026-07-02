@@ -1,67 +1,24 @@
-## Foundry
+# Choose Your Architecture
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+`This module explains the three ways to build an AI auditor`: 
 
-Foundry consists of:
+01. **single-pass**,
+02.  **multi-phase pipeline**, 
+03. **multi-agent system**.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+ The recommended choice is the **multi-phase pipeline** because it gives better precision and is easier to trust for real security audits.
 
-## Documentation
+## Why multi-phase?
+- **Recon**: understand the codebase.
+- **Detect**: find possible bugs.
+- **Verify**: confirm if the issue is really exploitable.
+- **Report**: show only verified findings.
 
-https://book.getfoundry.sh/
+## Why this is useful
+- Reduces false positives.
+- Makes audits more structured.
+- Easier to improve over time.
+- Better for deep manual review, not just fast scanning.
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-# ai-audit-bot
+## Best fit
+This approach is best for thorough audits where accuracy matters most, especially for an upcoming auditor building a trustworthy security tool.
