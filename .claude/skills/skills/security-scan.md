@@ -202,4 +202,4 @@ List all external/public functions with:
 - Whether it handles value (ETH or tokens)
 - Access control (onlyOwner, role-based, or unrestricted)
 
-Output this as a "Recon Summary" section BEFORE proceeding to detection.
+
