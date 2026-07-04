@@ -1,5 +1,7 @@
 # AI Security Auditor
 
+<img src="./images/img1.png">  
+
 AI Security Auditor is a Claude skill for reviewing Solidity and Foundry projects for common smart-contract vulnerabilities. It performs a structured security pass over the codebase, reports prioritized findings, and explains the evidence behind each issue so results can be reviewed instead of blindly trusted.
 
 ## Install
