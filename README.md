@@ -6,7 +6,7 @@ AI Security Auditor is a Claude skill for reviewing Solidity and Foundry project
 
 ## Install
 
-Clone this repository:
+
 
 ```bash
 git clone https://github.com/ZealynxSecurity/ai-security-auditor.git
